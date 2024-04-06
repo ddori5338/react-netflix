@@ -1,0 +1,13 @@
+/* override bootstrap navbar colors */
+.navbar,
+.navbar-default {
+    background-image: linear-gradient(to bottom,black 0,black 100%) !important; /* override background image gradient w/ flat color */
+}
+  
+.search-btn{
+    color: red;
+}
+
+.logo{
+    cursor: pointer;
+}
