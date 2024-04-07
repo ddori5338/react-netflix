@@ -17,7 +17,7 @@ const AppLayout = () => {
         <div>
             <Navbar variant="dark" expand="lg" className="bg-body-tertiary nb">
                 <Container fluid>
-                    <img width={120} src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png" className="logo" alt="" onClick={goToHome}/>
+                    <img width={120} src="https://i.namu.wiki/i/VC4ybUEcyxjcNN9bbD94MSuC90nzQOrsa-ZKYd8ZCcbFW62IB2vvvP5hZxbdNPR2oms8avAsSQJXKCQ3L4rTpw.svg" className="logo" alt="" onClick={goToHome}/>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                     <Nav
