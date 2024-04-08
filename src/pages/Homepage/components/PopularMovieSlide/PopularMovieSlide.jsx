@@ -8,16 +8,28 @@ import './PopularMovieSlide.style.css'
 
 
 const responsive = {
+    desktop1: {
+        breakpoint: { max: 3000, min: 2000 },
+        items: 8,
+    },
     desktop: {
-        breakpoint: { max: 3000, min: 1024 },
+        breakpoint: { max: 2000, min: 1555 },
         items: 6,
     },
     tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 2,
+        breakpoint: { max: 1555, min: 1122 },
+        items: 4,
     },
     mobile: {
-        breakpoint: { max: 464, min: 0 },
+        breakpoint: { max: 1122, min: 896 },
+        items: 3,
+    },
+    mobile1: {
+        breakpoint: { max: 896, min: 676 },
+        items: 2,
+    },
+    mobile2: {
+        breakpoint: { max: 676, min: 0 },
         items: 1,
     }
 };
@@ -53,7 +65,7 @@ const PopularMovieSlide = () => {
             // dotListClass="custom-dot-list-style"
             >
                 {data.results.map((movie, index) => <MovieCard movie={movie} key={index} />)}
-            </Carousel>;
+            </Carousel>
         </div>
     )
 }
