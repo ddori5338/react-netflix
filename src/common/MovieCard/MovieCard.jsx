@@ -20,7 +20,7 @@ const MovieCard = ({movie}) => {
         style={{backgroundImage: `url(https://media.themoviedb.org/t/p/w300_and_h450_bestv2${movie.poster_path})`}}
         className='movie-card'>
             <div className='overlay'>
-                <h2>{movie.title}</h2>
+                {movie.title.length > 30 ? <h3>{movie.title}</h3> : <h2>{movie.title}</h2>}
                 {showGenre(movie.genre_ids).map((id) => <Badge bg="danger">{id}</Badge>)}
                 <div className='info'>
                     <div className='vote-avg'>{Math.round(movie.vote_average*10)}% Match</div>
